@@ -1,14 +1,24 @@
 {
-    "compilerOptions": {
-        "target": "ESNext",
-        "module": "ESNext",
-        "lib": ["DOM", "ESNext"],
-        "jsx": "preserve",
-        "strict": true,
-        "moduleResolution": "Node",
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true
-    },
-    "include": ["src"]
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "ratnia",
+    "description": "ratnia website for me",
+    "type": "project",
+    "require": {
+        "php": "^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "ext-pdo": "*",
+        "ext-pdo_mysql": "*",
+        "ext-sqlite3": "*",
+        "guzzlehttp/guzzle": "^7.0"
+    },  
+    "autoload": {
+        "psr-4": {
+            "Ratnia\\": "src/"
+        }
+    },    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    }
 }
